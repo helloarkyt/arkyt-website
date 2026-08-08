@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Arkyt AI — Material Intelligence for leather goods. Map grain structure and nest handbag panels onto the strongest usable zones."
+    />
+    <title>Arkyt AI — Material Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23080d16'/%3E%3Ctext x='4' y='22' font-family='Syne,sans-serif' font-weight='800' font-size='14' fill='%2300d5b2'%3EAI%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Arkyt AI home">
+          <svg viewBox="0 0 92 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logo-title">
+            <title id="logo-title">Arkyt AI</title>
+            <text x="0" y="18" font-family="Syne, Plus Jakarta Sans, sans-serif" font-weight="800" font-size="18" letter-spacing="-0.4">
+              <tspan fill="#080d16">Arkyt </tspan><tspan fill="#00d5b2">AI</tspan>
+            </text>
+          </svg>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a class="nav-link" href="#how-it-works">How it works</a>
+          <a class="btn btn-primary" href="https://arkyt-studio.streamlit.app" rel="noopener noreferrer">Studio login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Material Intelligence</p>
+            <h1>
+              Turn hide scans into
+              <span class="accent">smarter nesting</span>
+            </h1>
+            <p class="lead">
+              Upload a cowhide scan, map grain structure, and preview how handbag panels
+              fit onto the strongest usable zones — before you cut.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="https://arkyt-studio.streamlit.app" rel="noopener noreferrer">
+                Open studio
+              </a>
+              <a class="btn btn-secondary btn-lg" href="#how-it-works">See the workflow</a>
+            </div>
+            <p class="hero-note">Authorised studio access only. Contact your administrator for credentials.</p>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-card visual-card-back"></div>
+            <div class="visual-card visual-card-front">
+              <div class="visual-label">Grain topology</div>
+              <div class="grain-preview">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="panel-chip">Front flap</div>
+              <div class="panel-chip panel-chip-2">Strap</div>
+              <div class="panel-chip panel-chip-3">Gusset</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="how-it-works">
+        <div class="container">
+          <div class="section-head">
+            <h2>Built for leather atelier teams</h2>
+            <p>A focused studio workflow — from scan to nested layout in minutes.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">01</div>
+              <h3>Upload hide scans</h3>
+              <p>Drop a JPG or PNG of a cowhide. The studio reads the image and prepares it for analysis.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">02</div>
+              <h3>Map grain structure</h3>
+              <p>See a colour heatmap of grain topology so you know where material is strongest.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">03</div>
+              <h3>Nest panels &amp; export</h3>
+              <p>Preview handbag panel placement on the hide and download cutting paths for your team.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container cta-inner">
+          <div>
+            <h2>Ready to run a live demo?</h2>
+            <p>Open the Material Intelligence studio and sign in with your authorised account.</p>
+          </div>
+          <a class="btn btn-primary btn-lg" href="https://arkyt-studio.streamlit.app" rel="noopener noreferrer">
+            Studio login
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">Arkyt <span>AI</span> — Material Intelligence</p>
+        <p class="footer-copy">&copy; <span id="year"></span> Arkyt AI. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
