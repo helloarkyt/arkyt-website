@@ -100,15 +100,26 @@ a {
 
 .brand {
   flex: 0 0 auto;
-  min-width: 6.75rem;
   overflow: visible;
+  text-decoration: none;
 }
 
-.brand-logo {
-  display: block;
-  width: 6.75rem;
-  height: 1.5rem;
-  overflow: visible;
+.brand-wordmark {
+  display: inline-block;
+  font-family: var(--arkyt-font-display);
+  font-weight: 800;
+  font-size: 1.125rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.brand-ink {
+  color: var(--arkyt-ink);
+}
+
+.brand-mint {
+  color: var(--arkyt-accent);
 }
 
 .btn-label-short {
@@ -118,7 +129,6 @@ a {
 .site-nav {
   flex: 0 1 auto;
   min-width: 0;
-}
   display: flex;
   align-items: center;
   gap: 0.75rem 1.25rem;
@@ -451,6 +461,10 @@ a {
     max-width: 100%;
   }
 
+  .grain-preview {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .feature-grid {
     grid-template-columns: 1fr;
   }
@@ -462,6 +476,10 @@ a {
 }
 
 @media (max-width: 640px) {
+  :root {
+    --container: calc(100vw - 1.25rem);
+  }
+
   .nav-link {
     display: none;
   }
@@ -470,9 +488,8 @@ a {
     padding: 0.75rem 0;
   }
 
-  .brand-logo {
-    width: 6.25rem;
-    height: 1.35rem;
+  .brand-wordmark {
+    font-size: 1rem;
   }
 
   .btn-label-full {
@@ -484,20 +501,31 @@ a {
   }
 
   .site-nav .btn {
-    padding: 0.62rem 0.85rem;
-    font-size: 0.84rem;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.82rem;
   }
 
   .hero {
-    padding-top: 2rem;
+    padding-top: 1.75rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-visual {
+    margin-top: 0.25rem;
   }
 
   .visual-card-front {
-    padding: 1rem;
+    padding: 0.85rem;
   }
 
   .grain-preview {
-    gap: 0.35rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
+  }
+
+  .panel-chip {
+    font-size: 0.68rem;
+    padding: 0.35rem 0.55rem;
   }
 
   .hero-actions {

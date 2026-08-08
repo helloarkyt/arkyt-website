@@ -1,0 +1,33 @@
+Upload these files to fix https://arkyt.ai
+==========================================
+
+FILES TO UPLOAD (all 3):
+  - index.html
+  - styles.css
+  - .nojekyll
+
+STEP 1 — Upload files
+  1. Open: https://github.com/helloarkyt/arkyt-website/upload/main
+  2. Drag all 3 files from this folder into the browser
+  3. If GitHub asks to REPLACE existing files, click OK
+  4. Click "Commit changes"
+
+STEP 2 — Fix GitHub Pages setting (one time)
+  1. Open: https://github.com/helloarkyt/arkyt-website/settings/pages
+  2. Under "Build and deployment" → "Source"
+  3. Choose: Deploy from a branch
+  4. Branch: main    Folder: / (root)
+  5. Click Save
+
+STEP 3 — Delete broken workflow (one time)
+  1. Open: https://github.com/helloarkyt/arkyt-website/tree/main/.github/workflows
+  2. Open pages.yml
+  3. Click trash icon (Delete file) → Commit
+
+STEP 4 — Wait and check
+  1. Wait 2–3 minutes
+  2. Open https://arkyt.ai in Incognito / private window
+  3. View page source → search for: brand-wordmark
+     Found = fixed!
+
+LOGO SHOULD SHOW: Arkyt (black) + AI (mint green)
