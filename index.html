@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Arkyt AI — Material Intelligence for leather goods. Map grain structure and nest handbag panels onto the strongest usable zones."
+      content="Arkyt AI — specialist tools for leather optimisation and cross-border product checks."
     />
-    <title>Arkyt AI — Material Intelligence</title>
+    <title>Arkyt AI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=6" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23080d16'/%3E%3Ctext x='4' y='22' font-family='Syne,sans-serif' font-weight='800' font-size='14' fill='%2300d5b2'%3EAI%3C/text%3E%3C/svg%3E" />
   </head>
-  <body data-site-version="2026-08-08-v3">
+  <body data-site-version="2026-08-15-v6">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
@@ -28,10 +28,14 @@
           </span>
         </a>
         <nav class="site-nav" aria-label="Primary">
-          <a class="nav-link" href="#how-it-works">How it works</a>
-          <a class="btn btn-primary" href="https://arkyt-studio.streamlit.app" rel="noopener noreferrer">
+          <a class="nav-link" href="#products">Products</a>
+          <a class="btn btn-secondary" href="https://arkyt-studio.streamlit.app" rel="noopener noreferrer">
             <span class="btn-label-full">Studio login</span>
-            <span class="btn-label-short">Login</span>
+            <span class="btn-label-short">Studio</span>
+          </a>
+          <a class="btn btn-primary" href="https://arkyt-sentinel.streamlit.app" rel="noopener noreferrer">
+            <span class="btn-label-full">Sentinel login</span>
+            <span class="btn-label-short">Sentinel</span>
           </a>
         </nav>
       </div>
@@ -41,38 +45,56 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Material Intelligence</p>
+            <p class="eyebrow">Arkyt AI</p>
             <h1>
-              Turn hide scans into
-              <span class="accent">smarter nesting</span>
+              Specialist tools,
+              <span class="accent">clear decisions</span>
             </h1>
             <p class="lead">
-              Upload a cowhide scan, map grain structure, and preview how handbag panels
-              fit onto the strongest usable zones — before you cut.
+              One home for Arkyt products. Sign in to the studio you use —
+              leather nesting, or a client-and-product compliance check.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary btn-lg" href="https://arkyt-studio.streamlit.app" rel="noopener noreferrer">
-                Open studio
-              </a>
-              <a class="btn btn-secondary btn-lg" href="#how-it-works">See the workflow</a>
+              <a class="btn btn-primary btn-lg" href="#products">See our products</a>
             </div>
-            <p class="hero-note">Authorised studio access only. Contact your administrator for credentials.</p>
+            <p class="hero-note">Authorised access only. Contact your administrator for credentials.</p>
           </div>
 
           <div class="hero-visual" aria-hidden="true">
             <div class="visual-card visual-card-front">
-              <div class="visual-label">Grain topology</div>
-              <div class="grain-preview">
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
-              </div>
+              <div class="visual-label">Two products, one home</div>
               <div class="panel-chips">
-                <div class="panel-chip">Front flap</div>
-                <div class="panel-chip panel-chip-2">Strap</div>
-                <div class="panel-chip panel-chip-3">Gusset</div>
+                <div class="panel-chip">Leather Optimiser</div>
+                <div class="panel-chip panel-chip-2">Regulatory Sentinel</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="products">
+        <div class="container">
+          <div class="section-head">
+            <h2>Our products</h2>
+            <p>Each login opens a different product. You will not be taken to the other one.</p>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <p class="product-kicker">Atelier teams</p>
+              <h3>Leather Optimiser</h3>
+              <p>Upload hide scans, map grain, and nest handbag panels before you cut.</p>
+              <a class="btn btn-secondary" href="https://arkyt-studio.streamlit.app" rel="noopener noreferrer">
+                Studio login
+              </a>
+            </article>
+            <article class="product-card">
+              <p class="product-kicker">Wealth and advice teams</p>
+              <h3>Regulatory Sentinel</h3>
+              <p>Check whether you can offer a product to a client before you pitch or trade.</p>
+              <a class="btn btn-primary" href="https://arkyt-sentinel.streamlit.app" rel="noopener noreferrer">
+                Sentinel login
+              </a>
+            </article>
           </div>
         </div>
       </section>
@@ -80,45 +102,33 @@
       <section class="features" id="how-it-works">
         <div class="container">
           <div class="section-head">
-            <h2>Built for leather atelier teams</h2>
-            <p>A focused studio workflow — from scan to nested layout in minutes.</p>
+            <h2>Regulatory Sentinel, in three steps</h2>
+            <p>Built for advisers. No codes or technical forms — just the client, the product, and the action.</p>
           </div>
           <div class="feature-grid">
             <article class="feature-card">
               <div class="feature-icon" aria-hidden="true">01</div>
-              <h3>Upload hide scans</h3>
-              <p>Drop a JPG or PNG of a cowhide. The studio reads the image and prepares it for analysis.</p>
+              <h3>Pick the client</h3>
+              <p>Choose the person by name. The check already knows where they live and which passports they hold.</p>
             </article>
             <article class="feature-card">
               <div class="feature-icon" aria-hidden="true">02</div>
-              <h3>Map grain structure</h3>
-              <p>See a colour heatmap of grain topology so you know where material is strongest.</p>
+              <h3>Pick the product</h3>
+              <p>Choose the fund you want to talk about. You do not need to type reference numbers.</p>
             </article>
             <article class="feature-card">
               <div class="feature-icon" aria-hidden="true">03</div>
-              <h3>Nest panels &amp; export</h3>
-              <p>Preview handbag panel placement on the hide and download cutting paths for your team.</p>
+              <h3>See a clear answer</h3>
+              <p>You can proceed, or you should not offer this — with a plain-language reason if it is blocked.</p>
             </article>
           </div>
-        </div>
-      </section>
-
-      <section class="cta-band">
-        <div class="container cta-inner">
-          <div>
-            <h2>Ready to run a live demo?</h2>
-            <p>Open the Material Intelligence studio and sign in with your authorised account.</p>
-          </div>
-          <a class="btn btn-primary btn-lg" href="https://arkyt-studio.streamlit.app" rel="noopener noreferrer">
-            Studio login
-          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p class="footer-brand">Arkyt <span>AI</span> — Material Intelligence</p>
+        <p class="footer-brand">Arkyt <span>AI</span></p>
         <p class="footer-copy">&copy; <span id="year"></span> Arkyt AI. All rights reserved.</p>
       </div>
     </footer>
